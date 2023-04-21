@@ -1,0 +1,210 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.card {
+    list-style: none;
+    background-color: var(--color-grey-1);
+    width: 90%;
+    height: 130px;
+    padding: 6px 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-left: 5px solid var(--color-secundary);
+    gap: 10px;
+    border-radius: 8px;
+}
+
+.card-saida {
+    list-style: none;
+    background-color: var(--color-grey-1);
+    width: 90%;
+    height: 130px;
+    padding: 6px 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-left: 5px solid var(--color-grey-2);
+    gap: 10px;
+    border-radius: 8px;
+}
+
+.card-content>h2 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: black
+}
+
+.card-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-content>p {
+    margin: 0;
+    color: var(--color-grey-4);
+    font-weight: 400;
+}
+
+svg.img-delete {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-color: var(--color-grey-2)
+}
+
+.div-delete-card {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.div-delete-card>span {
+    color: var(--color-grey-4);
+    font-weight: 400;
+}
+
+.list-cards {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-transactions {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-transactions>p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--color-grey-4);
+}
+
+.section-transactions>div {
+    margin: 0;
+}
+
+.section-transactions>div>h1 {
+    margin-right: 45px;
+    margin: 0;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.card-amount {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    border: 1px solid var(--color-grey-2);
+    padding: 15px;
+}
+
+.card-amount>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+svg.image-money {
+    width: 20px;
+    height: 20px;
+}
+
+.card-amount>div>p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.card-amount>div>h3 {
+    font-size: 1.2rem;
+}
+
+.card-amount>span {
+    color: var(--color-grey-4);
+}
+
+.noCard-Desk {
+    display: none;
+}
+
+@media(min-width:900px) {
+    .main-container {
+        flex-direction: row;
+        margin-left: 4%;
+        gap: 5%;
+        align-items: flex-start;
+    }
+
+    .form-container {
+        width: 30%;
+    }
+
+    .section-transactions {
+        width: 50%;
+    }
+
+    .section-transactions>div>h1 {
+        margin: 0;
+    }
+
+    .noCard-Desk {
+        display: flex;
+    }
+
+    .noCard-mobile {
+        display: none;
+    }
+
+    .card {
+        height: 60px;
+        padding: 20px;
+        flex-direction: row;
+        border-radius: 8px;
+    }
+
+    .card-saida {
+        height: 60px;
+        padding: 20px;
+        flex-direction: row;
+        border-radius: 8px;
+    }
+
+    .list-cards {
+        gap: 30px;
+    }
+
+    .div-delete-card {
+        flex-direction: row;
+    }
+}
